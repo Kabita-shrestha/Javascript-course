@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <blockquote>
+    
+        <h1>Simple Calculator</h1>
+        <label for="input">Input the number</label>
+        <input type="text"  id="num1"><br>
+        <label for="input">Input the number</label>
+        <input type="text" name="" id="num2"><br>
+        <button onclick="addnumber()">Add</button><br>
+        <button onclick="subnumber()">Sub</button><br>
+        <button onclick="mulnumber()">Multipilcation</button><br>
+        <button onclick="divnumber()">Divide</button><br>
+        <label for="result"> The result is:</label>
+    
+        <input type="text"  id="result" disabled>
+    <script>
+          function addnumber(){
+            let x=parseInt(document.getElementById('num1').value);
+            let y=parseInt(document.getElementById('num2').value);
+            let rs=x+y
+            document.getElementById('result').value=rs
+        }
+        
+        function subnumber(){
+            let x=parseInt(document.getElementById('num1').value);
+            let y=parseInt(document.getElementById('num2').value);
+            let rs=x-y
+            document.getElementById('result').value=rs
+
+        }
+        function mulnumber(){
+            let x=parseInt(document.getElementById('num1').value);
+            let y=parseInt(document.getElementById('num2').value);
+            let rs=x*y
+            document.getElementById('result').value=rs
+
+        }
+        function divnumber(){
+            let x=parseInt(document.getElementById('num1').value);
+            let y=parseInt(document.getElementById('num2').value);
+            let rs=x/y
+            document.getElementById('result').value=rs
+
+        }
+    
+    </script>
+</body>
+</html>
